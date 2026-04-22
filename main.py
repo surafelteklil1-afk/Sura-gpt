@@ -19,7 +19,7 @@ async def handle(update: Update, context):
     answer = search_answer(text)
     await update.message.reply_text(answer)
 
-app = ApplicationBuilder().token(os.getenv("TELEGRAM_TOKEN")).build()
+app = ApplicationBuilder().token(os.getenv("8788917132:AAG4G76ZUT_gs55p34zA9ppaZby2-5r6fNg")).build()
 app.add_handler(MessageHandler(filters.TEXT, handle))
 
 app.run_polling()
